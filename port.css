@@ -275,7 +275,7 @@ body {
     transition: 0.4s ease-in-out;
 }
 .borderline{
-    z-index: 3;
+    z-index: 1;
     position: relative;
     left:90px;
     display: flex;
@@ -299,7 +299,7 @@ body {
     left: 270px;
 }
 .content{
-    z-index: 1;
+    z-index: 2;
     /* display: flex; */
     align-self: center;
     /* align-items: center; */
@@ -356,6 +356,7 @@ body {
     border-radius: 50px;
     bottom: 30px;
     gap: 2px;   
+    z-index: 6;
 }
 .dresume:hover{
     cursor: pointer;
@@ -370,15 +371,15 @@ body {
 }
 .contentdark{
     color: white;
-    background-color: black;
+    background-color: #282828;
     border: 2px solid white;
     border-left: 0px;
 }
 .mainbg{
-    background-color: black;
+    background-color:#282828;
 }
 .cardshadow{
-    box-shadow: 0px 0px 50px 0.1px #dc87fa,0px 0px 50px 0.1px #dc87fa;
+    box-shadow: 0px 0px 1px 0.1px #dc87fa,0px 0px 1px 0.1px #dc87fa;
 }
 .socials{
     z-index: 2;
@@ -406,7 +407,90 @@ body {
     position: absolute;
     right: 490px;
     top: 50px;
+    z-index: 0;
 }
-.formclick{
-    display: block;
+
+.form{
+    z-index: 4;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid #806fcc; */
+    display: none;
+    height: 90%;
+    width: 60%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color:rgba(162, 246, 162, 0.64);
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 10px 5px;
+}
+.left img{
+    width: 90%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 10px 5px;
+    gap: 2%;
+}
+
+input{
+    display: flex;
+    width: 80%;
+    background-color: #e6e0e0;
+    border: none;
+    height: 4%;
+    border-radius: 30px;
+    padding: 10px;
+}
+.ftitle{
+    align-self: flex-start;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-left: 8%;
+    margin-bottom: 3%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.msg{
+    height: 19%;
+    display: flex;
+    width: 80%;
+    background-color: #e6e0e0;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+.send{
+    margin-top: 3%;
+    width: 83%;
+    border: none;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #806fcc;
+}
+.send:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
 }
